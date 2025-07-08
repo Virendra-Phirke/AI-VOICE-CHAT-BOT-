@@ -1,7 +1,7 @@
 // Web version of the AI Voice Assistant
 class AIVoiceAssistant {
     constructor() {
-        this.geminiApiKey = "AIzaSyCrHol9BNFf-SMuEGbu7IOLyGgN06QbANY";
+        this.geminiApiKey = "API_KEY";
         this.voiceEnabled = true;
         this.chatHistory = [];
         this.isProcessing = false;
