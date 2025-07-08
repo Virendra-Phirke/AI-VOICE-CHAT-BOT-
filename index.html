@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Voice Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 AI Voice Assistant</h1>
+            <p>Powered by Google Gemini</p>
+        </header>
+
+        <div class="chat-container">
+            <div class="chat-messages" id="chatMessages">
+                <div class="message system">
+                    <div class="message-content">
+                        Welcome! I'm your AI voice assistant. Ask me anything and I'll respond both in text and voice.
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-section">
+                <div class="input-group">
+                    <input type="text" id="userInput" placeholder="Type your message here..." maxlength="500">
+                    <button id="sendButton" class="send-btn">
+                        <span class="btn-text">Send</span>
+                        <span class="btn-icon">📤</span>
+                    </button>
+                    <button id="voiceInputButton" class="voice-input-btn">
+                        <span class="btn-icon">🎤</span>
+                        <span class="btn-text">Voice</span>
+                    </button>
+                </div>
+                <div class="controls">
+                    <button id="voiceToggle" class="control-btn">
+                        <span class="btn-icon">🔊</span>
+                        <span class="btn-text">Voice: ON</span>
+                    </button>
+                    <select id="voiceSelect" class="voice-select">
+                        <option value="">Auto-select best voice</option>
+                    </select>
+                    <button id="clearChat" class="control-btn">
+                        <span class="btn-icon">🗑️</span>
+                        <span class="btn-text">Clear Chat</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="status-bar">
+            <div class="status-indicator" id="statusIndicator">
+                <span class="status-dot"></span>
+                <span class="status-text">Ready</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="web-version.js"></script>
+</body>
+</html>
