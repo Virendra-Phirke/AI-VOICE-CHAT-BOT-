@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname)));
 
 // Initialize Gemini AI
-const geminiApiKey = "AIzaSyCrHol9BNFf-SMuEGbu7IOLyGgN06QbANY";
+const geminiApiKey = "API_KEY";
 const genAI = new GoogleGenerativeAI(geminiApiKey);
 
 // Store chat sessions
