@@ -137,6 +137,7 @@ The application uses your Gemini API key. Make sure it's properly configured in:
 
 3. Any changes to HTML/CSS/JS files will be reflected immediately
 
+
 ### Customization
 
 - **Styling**: Modify `styles.css` for visual changes
